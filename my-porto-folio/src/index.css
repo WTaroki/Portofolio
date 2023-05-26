@@ -5,8 +5,9 @@
 @tailwind utilities;
 
 body{
-    margin: 0;
+    margin:0;
     padding: 0;
-    overflow: hidden;
-    background-color: #ebebeb;
+    background-color: #dadada;
+    background-repeat: no-repeat;
+    object-fit: fill;
 }

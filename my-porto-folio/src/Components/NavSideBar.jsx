@@ -7,11 +7,11 @@ const SideBar = () => {
     <div>
         <nav className="fixed top-[30%] right-[1%] overflow-hidden rounded-md">
         <div className="container mx-auto">
-            <div className="w-full flex-col mx-auto items-center max-w-[80px] h-[200px] text-white backdrop-blur-2xl text-2xl hidden sm:flex bg-gray-700">
-                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-900" src=''><AiFillHome className='bg-transparent rounded-md duration-500' size={30}/></Link>
-                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-900" src=''><BiLeftArrow className='bg-transparentrounded-md duration-500' size={30}/></Link>
-                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-900" src=''><BiLeftArrow className='bg-transparent rounded-md duration-500' size={30}/></Link>
-                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-900" src=''><BiLeftArrow className='bg-transparent rounded-md duration-500' size={30}/></Link>
+            <div className="w-full flex-col mx-auto items-center max-w-[80px] h-[200px] text-white backdrop-blur-2xl text-2xl hidden sm:flex bg-gray-400">
+                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-800" src=''><AiFillHome className='bg-transparent rounded-md duration-500' size={30}/></Link>
+                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-800" src=''><BiLeftArrow className='bg-transparentrounded-md duration-500' size={30}/></Link>
+                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-800" src=''><BiLeftArrow className='bg-transparent rounded-md duration-500' size={30}/></Link>
+                <Link className = "w-[50px] h-[50px] flex items-center justify-center bg-transparent hover:bg-gray-800" src=''><BiLeftArrow className='bg-transparent rounded-md duration-500' size={30}/></Link>
             </div>
         </div>
         </nav>
