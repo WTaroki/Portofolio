@@ -7,13 +7,13 @@ const AutoImageSlider = (Index) => {
             url: Images.Test1
         },
         {
-            url: Images.Test2
-        },
-        {
             url: Images.Test3
         },
         {
             url: Images.Test4
+        },
+        {
+            url: Images.Test5
         }
     ]
 
@@ -36,7 +36,7 @@ const AutoImageSlider = (Index) => {
 
   return (
     <div className='max-w-[700px] w-full mx-auto relative py-8 flex flex-col gap-y-2'>
-      <div style={{backgroundImage: `url(${images[CurrIndex].url})`}} className="flex justify-center items-end w-full overflow-hidden bg-center bg-cover ease-[cubic-bezier(0.95,0.05,0.795,0.035)] duration-200 shadow-xl max-w-full h-[400px]">
+      <div style={{backgroundImage: `url(${images[CurrIndex].url})`}} className="flex justify-center items-end w-full overflow-hidden bg-center bg-cover ease-[cubic-bezier(0.95,0.05,0.795,0.035)] duration-200 shadow-xl max-w-full h-[400px] rounded-md">
         <div className="flex justify-center py-2 items-center gap-x-3 w-full">
           {images.map((_, slideIndex) => (
             <div key={slideIndex}  className="flex justify-center">
@@ -48,7 +48,7 @@ const AutoImageSlider = (Index) => {
       <div className='flex flex-row justify-between'>
         {images.map((_, slideIndex) => (
              <div key={slideIndex} onClick={() => GoToSlide(slideIndex)} className='cursor-pointer'>
-                {slideIndex == CurrIndex ? <img src={images[slideIndex].url} alt="" className='w-[140px] h-[100px] opacity-70'/> : <img src={images[slideIndex].url} alt="" className='w-[140px] h-[100px]'/>}
+                {slideIndex == CurrIndex ? <img src={images[slideIndex].url} alt="" className='w-[140px] h-[100px] opacity-70 rounded-md'/> : <img src={images[slideIndex].url} alt="" className='w-[140px] h-[100px] rounded-md'/>}
             </div>
           ))}
       </div>

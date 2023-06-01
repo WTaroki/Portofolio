@@ -29,7 +29,7 @@ const Collection = () => {
             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            image1: Images.Test4,
+            image1: Images.Test2,
             Date: "July 17 2023",
             DesignName : "Design Name",
             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -50,19 +50,19 @@ const Collection = () => {
 
     const GetCard = (Card, index) => {
         return(
-            <div className="max-w-[300px] rounded-xl overflow-hidden bg-slate-100 shadow-2xl" key={index}>
-                <div className='max-w-[300px] overflow-hidden'>
-                    <img src={Card.image1} alt="" className='w-full max-h-[200px] hover:scale-125 duration-300 ease-linear'/>
+            <div className="max-w-[400px] rounded-xl overflow-hidden bg-slate-100 shadow-2xl" key={index}>
+                <div className='max-w-[400px] overflow-hidden'>
+                    <img src={Card.image1} alt="" className='w-full max-h-[350px] hover:scale-125 duration-300 ease-linear'/>
                 </div>
 
                 <div className='px-5 max-w-[400px] flex flex-col'>
                     <p className='mt-3 font-poppins text-sm text-gray-400 '>{Card.Date}</p>
                     <p className='mt-2 text-xl font-bold font-play'>{Card.DesignName}</p>
-                    <p className='mt-3 text-xs font-poppins'>{Card.Desc}</p>                       
+                    {/* <p className='mt-3 text-xs font-poppins'>{Card.Desc}</p>                        */}
                 </div>
 
                 <button className='border rounded-md text-gray-800 border-gray-800 my-4 ml-5 text-md font-poppins'>
-                    <button onClick={ () => Nav('/Collection')} className='w-[120px] flex flex-row  items-center justify-between py-2 px-2 '>
+                    <button onClick={ () => Nav('/CollectionPage')} className='w-[120px] flex flex-row  items-center justify-between py-2 px-2 '>
                         View More<BsArrowRight size={20}/>
                     </button>
                 </button>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const PortDesign = () =>{
     return(
-        <div className='py-4 sm:px-4 md:px-12'>
+        <div className='py-4 md:py-12 sm:px-4 md:px-12'>
             <div className='max-w-[1200px] grid sm:grid-cols-4 mx-auto p-4 gap-x-3 gap-y-3 grid-rows-2 md:grid-rows-none'>
                 <div className='col-span-2'>
                     <AutoImageSlider/>
