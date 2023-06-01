@@ -4,6 +4,7 @@ import {BsArrowRight} from 'react-icons/bs'
 import { Link } from "react-scroll";
 import RouteCollection from '../Routing/Route';
 import { BrowserRouter,Route, Routes, useNavigate } from "react-router-dom";
+import PortDesign from './PortDesign';
 
 const Collection = () => {
     const Nav = useNavigate();
@@ -11,60 +12,36 @@ const Collection = () => {
     const CardCollection = [
         {
             image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
+            Date: "July 17 2023",
+            DesignName : "Design Name",
+            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            image1: Images.Test2,
+            Date: "July 17 2023",
+            DesignName : "Design Name",
+            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            image1: Images.Test3,
+            Date: "July 17 2023",
+            DesignName : "Design Name",
+            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            image1: Images.Test4,
+            Date: "July 17 2023",
+            DesignName : "Design Name",
+            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            image1: Images.Test5,
             Date: "July 17 2023",
             DesignName : "Design Name",
             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
-            Date: "July 17 2023",
-            DesignName : "Design Name",
-            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
-            Date: "July 17 2023",
-            DesignName : "Design Name",
-            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
-            Date: "July 17 2023",
-            DesignName : "Design Name",
-            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
-            Date: "July 17 2023",
-            DesignName : "Design Name",
-            Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            image1: Images.Test1,
-            image2: Images.Test2,
-            image3: Images.Test3,
-            image4: Images.Test4,
-            image5: Images.Test5,
             Date: "July 17 2023",
             DesignName : "Design Name",
             Desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -76,12 +53,6 @@ const Collection = () => {
             <div className="max-w-[300px] rounded-xl overflow-hidden bg-slate-100 shadow-2xl" key={index}>
                 <div className='max-w-[300px] overflow-hidden'>
                     <img src={Card.image1} alt="" className='w-full max-h-[200px] hover:scale-125 duration-300 ease-linear'/>
-                </div>
-
-                <div className='flex flex-row max-w-[300px] overflow-hidden'>
-                    <img src={Card.image2} alt="" className='w-1/3 h-auto hover:scale-125 duration-300 ease-linear'/>
-                    <img src={Card.image3} alt="" className='w-1/3 h-auto hover:scale-125 duration-300 ease-linear'/>
-                    <img src={Card.image4} alt="" className='w-1/3 h-auto hover:scale-125 duration-300 ease-linear'/>
                 </div>
 
                 <div className='px-5 max-w-[400px] flex flex-col'>
@@ -101,19 +72,18 @@ const Collection = () => {
 
 
     return(
-        <div className='text-gray-800'>
-
-            <div className='max-w-[1500px] h-screen flex flex-col mx-auto mt-[20px] items-center'>
-              <div className="text-2xl font-poppins md:text-4xl">Design & Portofolio</div>
-              <div className="text-sm font-poppins md:text-md pt-1">Click the cards to see the details</div>
-              <div className="text-xs md:text-lg">―――――――――― || ――――――――――</div>
-              <div className='max-w-[1500px] flex flex-col gap-y-1 justify-center items-center'>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-between gap-x-5 p-5 gap-y-5">
+        <div className='text-gray-800 py-12' name='Collection'>
+            <div className='max-w-[1200px] flex flex-col mx-auto mt-[20px] items-center'>
+                <div className="text-2xl font-poppins md:text-4xl">Design & Portofolio</div>
+                <div className="text-sm font-poppins md:text-md pt-1">Click the cards to see the details</div>
+                <div className="text-xs md:text-lg">―――――――――― || ――――――――――</div>
+                <div className='max-w-[1500px] flex flex-col gap-y-1 justify-center items-center'>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-between gap-x-5 p-5 gap-y-5">
                               {CardCollection.map(GetCard)}                               
-                        </div>                       
-                    </div>
- 
-                    <div className="text-xs md:text-lg mt-5">―――――――――― || ――――――――――</div>
+                    </div>                       
+                </div>
+
+                <div className="text-xs md:text-lg mt-2 ">―――――――――― || ――――――――――</div>
             </div>
         </div>
     )

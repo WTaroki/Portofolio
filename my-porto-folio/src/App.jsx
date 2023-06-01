@@ -13,10 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        {/* <NavbarMobile/>
+        <NavbarMobile/>
         <SideBar/>
-        <SocialBar/> */}
-        <ImageSlider/>
+        <SocialBar/>
+        <HomeContent/>
+        <Collection/>
+        <PortDesign/>
       </div>
     </BrowserRouter>
 

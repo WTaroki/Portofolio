@@ -3,9 +3,9 @@ import Profile from '../assets/Profile.png'
 
 const HomeContent = () => {
     return (
-        <div className='text-gray-800'>
+        <div className='text-gray-800' name='Home'>
 
-            <div className='max-w-[1500px] px-5 h-screen flex flex-col justify-center items-center md:px-20 lg:flex-row gap-y-10 mt-[-100px] mx-auto'>
+            <div className='max-w-[1200px] mt-[20px] px-5 h-screen flex flex-col justify-center items-center md:px-20 lg:flex-row gap-y-10 lg:mt-[-80px] mx-auto'>
               <div className="max-w-[650px] mx-auto flex flex-col justify-center">
                     <p className='HP:text-xl text-gray-800'><br />――― <span className='font-poppins font-bold text-xl'>Welcome</span> </p>
                     <h3 className=' text-1xl mt-2 text-gray-600 font-bold font-play md:text-2xl md:py-2'><Typed strings={['Bonjour','Halo','Hello','Hallo','Aloha']} loop typeSpeed={120} backSpeed={120} className='font-caveat font-bold text-gray-800 text-3xl'/>, I'm</h3>
